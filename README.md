@@ -1,33 +1,33 @@
 # PROJECT_PYPY
-פרויקט ובו אנו נשחזר ניסוי במאמר# # פרויקט שחזור תוצאות מדעיות: התגברות על שכחה קטסטרופלית ברשתות נוירונים
+# Overcoming Catastrophic Forgetting in Neural Networks - Reproducibility Project
 
+This repository contains a reproducibility study of the paper:
+**"Overcoming catastrophic forgetting in neural networks"** by Kirkpatrick et al. (DeepMind, 2016).
 
-**"Overcoming catastrophic forgetting in neural networks"** מאת Kirkpatrick et al. (DeepMind, 2016).
+## Project Overview
+The goal of this project is to recreate the scientific results demonstrating **Elastic Weight Consolidation (EWC)**. This algorithm allows neural networks to learn tasks sequentially without forgetting previously learned information—a phenomenon known as "Catastrophic Forgetting."
 
-## סקירת הפרויקט
-מטרת הפרויקט היא לשחזר את התוצאות המדעיות המציגות את אלגוריתם ה-**Elastic Weight Consolidation (EWC)**. אלגוריתם זה מאפשר לרשתות נוירונים ללמוד משימות ברצף מבלי לשכוח מידע שנלמד בעבר - תופעה המכונה "שכחה קטסטרופלית" (Catastrophic Forgetting).
+## Methodology
+In this project, we focus on the **Permuted MNIST** experiment:
+1. **Task A:** Training a multi-layer perceptron (MLP) on the standard MNIST dataset.
+2. **Task B:** Training the same network on a version of MNIST where pixels are randomly (but consistently) permuted.
+3. **Comparison:** We compare a standard training approach (SGD) against the **EWC** algorithm to observe how EWC preserves the accuracy of Task A while learning Task B.
 
-## מתודולוגיה
-בפרויקט זה אנו מתמקדים בניסוי ה-**Permuted MNIST**:
-1. **משימה א':** אימון רשת נוירונים (MLP) על בסיס הנתונים MNIST הסטנדרטי.
-2. **משימה ב':** אימון אותה הרשת על גרסה של MNIST שבה הפיקסלים עורבבו בצורה אקראית (אך עקבית).
-3. **השוואה:** אנו משווים בין גישת אימון סטנדרטית (SGD) לבין אלגוריתם ה-**EWC** כדי לבחון כיצד ה-EWC משמר את הדיוק של משימה א' תוך כדי לימוד משימה ב'.
+## Key Features
+* Implementation of the **Fisher Information Matrix** to estimate weight importance.
+* Comparative visualization of accuracy decay vs. consolidation.
+* Python-based implementation using modern deep learning libraries.
 
-## תכונות מרכזיות
-* מימוש **Fisher Information Matrix** להערכת חשיבות המשקלים ברשת.
-* ויזואליזציה השוואתית של דעיכת הדיוק לעומת שימורו (Consolidation).
-* מימוש ב-Python תוך שימוש בספריות למידה עמוקה מודרניות.
+## Repository Structure
+* `main.py`: The core script for running the experiments.
+* `EWC_Implementation.ipynb`: Detailed walkthrough of the code and logic.
+* `takeaways.pdf`: A reflective report on the findings and AI-assisted workflow.
+* `AI_Work_Log.md`: Documentation of the interaction with AI tools throughout the project.
 
-## מבנה המאגר
-* `main.py`: הסקריפט המרכזי להרצת הניסויים.
-* `EWC_Implementation.ipynb`: מחברת Jupyter עם הסברים מפורטים על הלוגיקה והקוד.
-* `takeaways.pdf`: דוח רפלקטיבי על הממצאים ותהליך העבודה.
-* `AI_Work_Log.md`: תיעוד האינטראקציה עם כלי AI (כמו Gemini) לאורך הפרויקט.
+## How to Run
+1. Clone the repository.
+2. Install dependencies: `pip install -r requirements.txt`.
+3. Run the analysis: `python main.py`.
 
-## הוראות הרצה
-1. שיבוט המאגר (Clone).
-2. התקנת ספריות נדרשות: `pip install -r requirements.txt`.
-3. הרצת הניתוח: `python main.py`.
-
-## מקורות
+## References
 Kirkpatrick, J., Pascanu, R., Rabinowitz, N., Veness, J., Desjardins, G., Rusu, A. A., ... & Hadsell, R. (2017). Overcoming catastrophic forgetting in neural networks. *Proceedings of the National Academy of Sciences*, 114(13), 3521-3526.
