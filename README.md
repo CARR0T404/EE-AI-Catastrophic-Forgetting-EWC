@@ -1,7 +1,7 @@
 # PROJECT_PYPY
 פרויקט ובו אנו נשחזר ניסוי במאמר# # פרויקט שחזור תוצאות מדעיות: התגברות על שכחה קטסטרופלית ברשתות נוירונים
 
-מאגר זה מכיל מחקר שחזור (Reproducibility Study) למאמר המדעי:
+
 **"Overcoming catastrophic forgetting in neural networks"** מאת Kirkpatrick et al. (DeepMind, 2016).
 
 ## סקירת הפרויקט
