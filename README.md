@@ -48,6 +48,17 @@ We adopt the metrics proposed by Kemker et al. to move beyond simple accuracy:
 
 ## Implementation Details
 
+## Core Libraries Used
+* **Deep Learning:** ```PyTorch``` for model architecture and the EWC penalty loop.  
+
+* **Environment:** ```Gymnasium``` with Atari ROMs for the catastrophic forgetting benchmarks.
+
+* **Computer Vision:** ```OpenCV``` (```cv2```) for image preprocessing and frame warping.
+
+* **Visualization:** ```Matplotlib``` for generating reconstruction and penalty graphs.
+
+* **Data Handling:** ```NumPy``` and ```Pandas``` for matrix operations and result logging.
+
 ### Prerequisites
   To run this project, ensure you have Python 3.8+ installed.
   You can install all required dependencies using the provided ```requirements.txt``` file:
