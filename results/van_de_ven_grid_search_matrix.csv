@@ -1,0 +1,137 @@
+protocol,scenario,method_family,hyperparameter_value,average_accuracy,online_gamma
+split,Task-IL,None,1.0,0.8889999999999999,
+split,Domain-IL,None,1.0,0.638,
+split,Class-IL,None,1.0,0.099,
+permuted,Task-IL,None,1.0,0.5273333333333333,
+permuted,Domain-IL,None,1.0,0.7060000000000001,
+permuted,Class-IL,None,1.0,0.07533333333333334,
+split,Task-IL,EWC,1.0,0.914,
+split,Task-IL,Online EWC,1.0,0.914,1.0
+split,Task-IL,Online EWC,1.0,0.914,0.8
+split,Task-IL,Online EWC,1.0,0.914,0.6
+split,Task-IL,EWC,10.0,0.914,
+split,Task-IL,Online EWC,10.0,0.914,1.0
+split,Task-IL,Online EWC,10.0,0.914,0.8
+split,Task-IL,Online EWC,10.0,0.914,0.6
+split,Task-IL,EWC,1000.0,0.9339999999999999,
+split,Task-IL,Online EWC,1000.0,0.9239999999999998,1.0
+split,Task-IL,Online EWC,1000.0,0.9239999999999998,0.8
+split,Task-IL,Online EWC,1000.0,0.9239999999999998,0.6
+split,Task-IL,EWC,100000.0,0.958,
+split,Task-IL,Online EWC,100000.0,0.9560000000000001,1.0
+split,Task-IL,Online EWC,100000.0,0.9560000000000001,0.8
+split,Task-IL,Online EWC,100000.0,0.9560000000000001,0.6
+split,Task-IL,SI,0.01,0.8889999999999999,
+split,Task-IL,SI,0.1,0.8889999999999999,
+split,Task-IL,SI,10.0,0.8879999999999999,
+split,Task-IL,SI,1000.0,0.9460000000000001,
+split,Task-IL,XdG,0.0,0.8889999999999999,
+split,Task-IL,XdG,20.0,0.9490000000000001,
+split,Task-IL,XdG,40.0,0.9039999999999999,
+split,Task-IL,XdG,60.0,0.966,
+split,Task-IL,XdG,80.0,0.9720000000000001,
+split,Domain-IL,EWC,1.0,0.641,
+split,Domain-IL,Online EWC,1.0,0.641,1.0
+split,Domain-IL,Online EWC,1.0,0.641,0.8
+split,Domain-IL,Online EWC,1.0,0.641,0.6
+split,Domain-IL,EWC,10.0,0.641,
+split,Domain-IL,Online EWC,10.0,0.641,1.0
+split,Domain-IL,Online EWC,10.0,0.641,0.8
+split,Domain-IL,Online EWC,10.0,0.641,0.6
+split,Domain-IL,EWC,1000.0,0.624,
+split,Domain-IL,Online EWC,1000.0,0.629,1.0
+split,Domain-IL,Online EWC,1000.0,0.629,0.8
+split,Domain-IL,Online EWC,1000.0,0.629,0.6
+split,Domain-IL,EWC,100000.0,0.733,
+split,Domain-IL,Online EWC,100000.0,0.7140000000000001,1.0
+split,Domain-IL,Online EWC,100000.0,0.6799999999999999,0.8
+split,Domain-IL,Online EWC,100000.0,0.663,0.6
+split,Domain-IL,SI,0.01,0.638,
+split,Domain-IL,SI,0.1,0.638,
+split,Domain-IL,SI,10.0,0.641,
+split,Domain-IL,SI,1000.0,0.7510000000000001,
+split,Class-IL,EWC,1.0,0.11000000000000001,
+split,Class-IL,Online EWC,1.0,0.11000000000000001,1.0
+split,Class-IL,Online EWC,1.0,0.11000000000000001,0.8
+split,Class-IL,Online EWC,1.0,0.11000000000000001,0.6
+split,Class-IL,EWC,10.0,0.122,
+split,Class-IL,Online EWC,10.0,0.11800000000000002,1.0
+split,Class-IL,Online EWC,10.0,0.11800000000000002,0.8
+split,Class-IL,Online EWC,10.0,0.11800000000000002,0.6
+split,Class-IL,EWC,1000.0,0.141,
+split,Class-IL,Online EWC,1000.0,0.13799999999999998,1.0
+split,Class-IL,Online EWC,1000.0,0.13599999999999998,0.8
+split,Class-IL,Online EWC,1000.0,0.137,0.6
+split,Class-IL,EWC,100000.0,0.20199999999999996,
+split,Class-IL,Online EWC,100000.0,0.186,1.0
+split,Class-IL,Online EWC,100000.0,0.192,0.8
+split,Class-IL,Online EWC,100000.0,0.197,0.6
+split,Class-IL,SI,0.01,0.099,
+split,Class-IL,SI,0.1,0.099,
+split,Class-IL,SI,10.0,0.10700000000000001,
+split,Class-IL,SI,1000.0,0.30599999999999994,
+permuted,Task-IL,EWC,1.0,0.556,
+permuted,Task-IL,Online EWC,1.0,0.556,1.0
+permuted,Task-IL,Online EWC,1.0,0.556,0.8
+permuted,Task-IL,Online EWC,1.0,0.556,0.6
+permuted,Task-IL,EWC,10.0,0.5506666666666666,
+permuted,Task-IL,Online EWC,10.0,0.5586666666666666,1.0
+permuted,Task-IL,Online EWC,10.0,0.5586666666666666,0.8
+permuted,Task-IL,Online EWC,10.0,0.558,0.6
+permuted,Task-IL,EWC,1000.0,0.6366666666666667,
+permuted,Task-IL,Online EWC,1000.0,0.608,1.0
+permuted,Task-IL,Online EWC,1000.0,0.6073333333333334,0.8
+permuted,Task-IL,Online EWC,1000.0,0.604,0.6
+permuted,Task-IL,EWC,100000.0,0.728,
+permuted,Task-IL,Online EWC,100000.0,0.704,1.0
+permuted,Task-IL,Online EWC,100000.0,0.704,0.8
+permuted,Task-IL,Online EWC,100000.0,0.7106666666666668,0.6
+permuted,Task-IL,SI,0.01,0.5273333333333333,
+permuted,Task-IL,SI,0.1,0.5286666666666667,
+permuted,Task-IL,SI,10.0,0.55,
+permuted,Task-IL,SI,1000.0,0.6366666666666666,
+permuted,Task-IL,XdG,0.0,0.5273333333333333,
+permuted,Task-IL,XdG,20.0,0.43,
+permuted,Task-IL,XdG,40.0,0.372,
+permuted,Task-IL,XdG,60.0,0.40800000000000003,
+permuted,Task-IL,XdG,80.0,0.396,
+permuted,Domain-IL,EWC,1.0,0.7066666666666668,
+permuted,Domain-IL,Online EWC,1.0,0.7066666666666668,1.0
+permuted,Domain-IL,Online EWC,1.0,0.7066666666666668,0.8
+permuted,Domain-IL,Online EWC,1.0,0.7066666666666668,0.6
+permuted,Domain-IL,EWC,10.0,0.71,
+permuted,Domain-IL,Online EWC,10.0,0.708,1.0
+permuted,Domain-IL,Online EWC,10.0,0.71,0.8
+permuted,Domain-IL,Online EWC,10.0,0.7073333333333334,0.6
+permuted,Domain-IL,EWC,1000.0,0.7313333333333334,
+permuted,Domain-IL,Online EWC,1000.0,0.7326666666666666,1.0
+permuted,Domain-IL,Online EWC,1000.0,0.7299999999999999,0.8
+permuted,Domain-IL,Online EWC,1000.0,0.726,0.6
+permuted,Domain-IL,EWC,100000.0,0.7493333333333333,
+permuted,Domain-IL,Online EWC,100000.0,0.7553333333333333,1.0
+permuted,Domain-IL,Online EWC,100000.0,0.758,0.8
+permuted,Domain-IL,Online EWC,100000.0,0.7533333333333333,0.6
+permuted,Domain-IL,SI,0.01,0.7060000000000001,
+permuted,Domain-IL,SI,0.1,0.7086666666666667,
+permuted,Domain-IL,SI,10.0,0.7133333333333333,
+permuted,Domain-IL,SI,1000.0,0.6813333333333333,
+permuted,Class-IL,EWC,1.0,0.07400000000000001,
+permuted,Class-IL,Online EWC,1.0,0.07400000000000001,1.0
+permuted,Class-IL,Online EWC,1.0,0.07400000000000001,0.8
+permuted,Class-IL,Online EWC,1.0,0.07400000000000001,0.6
+permuted,Class-IL,EWC,10.0,0.08266666666666667,
+permuted,Class-IL,Online EWC,10.0,0.08533333333333333,1.0
+permuted,Class-IL,Online EWC,10.0,0.08466666666666667,0.8
+permuted,Class-IL,Online EWC,10.0,0.086,0.6
+permuted,Class-IL,EWC,1000.0,0.18933333333333333,
+permuted,Class-IL,Online EWC,1000.0,0.152,1.0
+permuted,Class-IL,Online EWC,1000.0,0.14200000000000002,0.8
+permuted,Class-IL,Online EWC,1000.0,0.14466666666666667,0.6
+permuted,Class-IL,EWC,100000.0,0.11866666666666667,
+permuted,Class-IL,Online EWC,100000.0,0.12333333333333334,1.0
+permuted,Class-IL,Online EWC,100000.0,0.12266666666666666,0.8
+permuted,Class-IL,Online EWC,100000.0,0.122,0.6
+permuted,Class-IL,SI,0.01,0.07533333333333334,
+permuted,Class-IL,SI,0.1,0.08533333333333334,
+permuted,Class-IL,SI,10.0,0.11933333333333333,
+permuted,Class-IL,SI,1000.0,0.21000000000000002,

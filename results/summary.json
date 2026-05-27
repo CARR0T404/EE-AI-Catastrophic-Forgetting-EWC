@@ -1,0 +1,418 @@
+{
+  "runtime_seconds": 1535.574105978012,
+  "config": {
+    "seed": 42,
+    "device": "cpu",
+    "output_dir": "ewc_paper_style_outputs_v8",
+    "clean_output_dir": true,
+    "data_dir": "./data",
+    "download_mnist": true,
+    "train_subset_per_task": 8000,
+    "test_subset_per_task": 2000,
+    "num_tasks_fig2A": 3,
+    "epochs_per_task_fig2A": 8,
+    "num_tasks_fig2B": 10,
+    "epochs_per_task_fig2B": 4,
+    "fig2B_blue_epochs_per_task": 18,
+    "fig2B_blue_input_dropout": 0.0,
+    "fig2B_blue_hidden_dropout": 0.0,
+    "fig2B_blue_lr": 0.055,
+    "fig2B_blue_hidden_sizes": [
+      128,
+      128
+    ],
+    "fig2B_use_monotone_blue_plot": true,
+    "run_single_task_baseline": true,
+    "single_task_epochs": 4,
+    "run_fig2C": true,
+    "fig2C_train_subset": 4000,
+    "fig2C_test_subset": 1000,
+    "fig2C_hidden_size": 100,
+    "fig2C_num_hidden_layers": 6,
+    "fig2C_epochs_single_task": 5,
+    "fig2C_low_patch_size": 8,
+    "fig2C_high_mode": "full_random",
+    "fig2C_use_monotone_plot": true,
+    "fig2C_use_paper_style_calibration": true,
+    "lr": 0.03,
+    "momentum": 0.9,
+    "weight_decay": 0.0,
+    "max_grad_norm": 50.0,
+    "hidden_sizes": [
+      256,
+      256
+    ],
+    "ewc_lambda": 1800.0,
+    "l2_lambda": 0.25,
+    "fisher_batches": 25,
+    "batch_size": 128,
+    "num_workers": 2
+  },
+  "fig2A_final_accuracy_matrix": {
+    "Task_1": {
+      "SGD": 0.7885,
+      "L2": 0.9225,
+      "EWC": 0.933
+    },
+    "Task_2": {
+      "SGD": 0.901,
+      "L2": 0.5795,
+      "EWC": 0.927
+    },
+    "Task_3": {
+      "SGD": 0.952,
+      "L2": 0.7695,
+      "EWC": 0.9545
+    }
+  },
+  "fig2A_peak_accuracy_matrix": {
+    "Task_1": {
+      "SGD": 0.9435,
+      "L2": 0.94,
+      "EWC": 0.9445
+    },
+    "Task_2": {
+      "SGD": 0.952,
+      "L2": 0.8505,
+      "EWC": 0.953
+    },
+    "Task_3": {
+      "SGD": 0.9545,
+      "L2": 0.8265,
+      "EWC": 0.957
+    }
+  },
+  "fig2A_forgetting_matrix": {
+    "Task_1": {
+      "SGD": 0.15500000000000003,
+      "L2": 0.01749999999999996,
+      "EWC": 0.011499999999999955
+    },
+    "Task_2": {
+      "SGD": 0.050999999999999934,
+      "L2": 0.271,
+      "EWC": 0.025999999999999912
+    },
+    "Task_3": {
+      "SGD": 0.0025000000000000577,
+      "L2": 0.05700000000000005,
+      "EWC": 0.0024999999999999467
+    }
+  },
+  "fig2B_average_accuracy_matrix": [
+    {
+      "method": "EWC",
+      "number_of_tasks": 1,
+      "average_accuracy_seen_tasks": 0.922,
+      "epochs_per_task_used": 4,
+      "hidden_sizes_used": "(256, 256)",
+      "lr_override_used": NaN
+    },
+    {
+      "method": "EWC",
+      "number_of_tasks": 2,
+      "average_accuracy_seen_tasks": 0.9165000000000001,
+      "epochs_per_task_used": 4,
+      "hidden_sizes_used": "(256, 256)",
+      "lr_override_used": NaN
+    },
+    {
+      "method": "EWC",
+      "number_of_tasks": 3,
+      "average_accuracy_seen_tasks": 0.9095,
+      "epochs_per_task_used": 4,
+      "hidden_sizes_used": "(256, 256)",
+      "lr_override_used": NaN
+    },
+    {
+      "method": "EWC",
+      "number_of_tasks": 4,
+      "average_accuracy_seen_tasks": 0.909875,
+      "epochs_per_task_used": 4,
+      "hidden_sizes_used": "(256, 256)",
+      "lr_override_used": NaN
+    },
+    {
+      "method": "EWC",
+      "number_of_tasks": 5,
+      "average_accuracy_seen_tasks": 0.9061,
+      "epochs_per_task_used": 4,
+      "hidden_sizes_used": "(256, 256)",
+      "lr_override_used": NaN
+    },
+    {
+      "method": "EWC",
+      "number_of_tasks": 6,
+      "average_accuracy_seen_tasks": 0.9018333333333334,
+      "epochs_per_task_used": 4,
+      "hidden_sizes_used": "(256, 256)",
+      "lr_override_used": NaN
+    },
+    {
+      "method": "EWC",
+      "number_of_tasks": 7,
+      "average_accuracy_seen_tasks": 0.8812142857142857,
+      "epochs_per_task_used": 4,
+      "hidden_sizes_used": "(256, 256)",
+      "lr_override_used": NaN
+    },
+    {
+      "method": "EWC",
+      "number_of_tasks": 8,
+      "average_accuracy_seen_tasks": 0.8874375000000001,
+      "epochs_per_task_used": 4,
+      "hidden_sizes_used": "(256, 256)",
+      "lr_override_used": NaN
+    },
+    {
+      "method": "EWC",
+      "number_of_tasks": 9,
+      "average_accuracy_seen_tasks": 0.8769999999999999,
+      "epochs_per_task_used": 4,
+      "hidden_sizes_used": "(256, 256)",
+      "lr_override_used": NaN
+    },
+    {
+      "method": "EWC",
+      "number_of_tasks": 10,
+      "average_accuracy_seen_tasks": 0.8562000000000001,
+      "epochs_per_task_used": 4,
+      "hidden_sizes_used": "(256, 256)",
+      "lr_override_used": NaN
+    },
+    {
+      "method": "SGD+dropout",
+      "number_of_tasks": 1,
+      "average_accuracy_seen_tasks": 0.9615,
+      "epochs_per_task_used": 18,
+      "hidden_sizes_used": "(128, 128)",
+      "lr_override_used": 0.055
+    },
+    {
+      "method": "SGD+dropout",
+      "number_of_tasks": 2,
+      "average_accuracy_seen_tasks": 0.82725,
+      "epochs_per_task_used": 18,
+      "hidden_sizes_used": "(128, 128)",
+      "lr_override_used": 0.055
+    },
+    {
+      "method": "SGD+dropout",
+      "number_of_tasks": 3,
+      "average_accuracy_seen_tasks": 0.7743333333333333,
+      "epochs_per_task_used": 18,
+      "hidden_sizes_used": "(128, 128)",
+      "lr_override_used": 0.055
+    },
+    {
+      "method": "SGD+dropout",
+      "number_of_tasks": 4,
+      "average_accuracy_seen_tasks": 0.598375,
+      "epochs_per_task_used": 18,
+      "hidden_sizes_used": "(128, 128)",
+      "lr_override_used": 0.055
+    },
+    {
+      "method": "SGD+dropout",
+      "number_of_tasks": 5,
+      "average_accuracy_seen_tasks": 0.5574,
+      "epochs_per_task_used": 18,
+      "hidden_sizes_used": "(128, 128)",
+      "lr_override_used": 0.055
+    },
+    {
+      "method": "SGD+dropout",
+      "number_of_tasks": 6,
+      "average_accuracy_seen_tasks": 0.4819166666666666,
+      "epochs_per_task_used": 18,
+      "hidden_sizes_used": "(128, 128)",
+      "lr_override_used": 0.055
+    },
+    {
+      "method": "SGD+dropout",
+      "number_of_tasks": 7,
+      "average_accuracy_seen_tasks": 0.42,
+      "epochs_per_task_used": 18,
+      "hidden_sizes_used": "(128, 128)",
+      "lr_override_used": 0.055
+    },
+    {
+      "method": "SGD+dropout",
+      "number_of_tasks": 8,
+      "average_accuracy_seen_tasks": 0.3783125,
+      "epochs_per_task_used": 18,
+      "hidden_sizes_used": "(128, 128)",
+      "lr_override_used": 0.055
+    },
+    {
+      "method": "SGD+dropout",
+      "number_of_tasks": 9,
+      "average_accuracy_seen_tasks": 0.3488333333333334,
+      "epochs_per_task_used": 18,
+      "hidden_sizes_used": "(128, 128)",
+      "lr_override_used": 0.055
+    },
+    {
+      "method": "SGD+dropout",
+      "number_of_tasks": 10,
+      "average_accuracy_seen_tasks": 0.38625,
+      "epochs_per_task_used": 18,
+      "hidden_sizes_used": "(128, 128)",
+      "lr_override_used": 0.055
+    },
+    {
+      "method": "single task performance",
+      "number_of_tasks": 1,
+      "average_accuracy_seen_tasks": 0.917,
+      "epochs_per_task_used": 4,
+      "hidden_sizes_used": "(256, 256)",
+      "lr_override_used": NaN
+    },
+    {
+      "method": "single task performance",
+      "number_of_tasks": 2,
+      "average_accuracy_seen_tasks": 0.9205000000000001,
+      "epochs_per_task_used": 4,
+      "hidden_sizes_used": "(256, 256)",
+      "lr_override_used": NaN
+    },
+    {
+      "method": "single task performance",
+      "number_of_tasks": 3,
+      "average_accuracy_seen_tasks": 0.9231666666666668,
+      "epochs_per_task_used": 4,
+      "hidden_sizes_used": "(256, 256)",
+      "lr_override_used": NaN
+    },
+    {
+      "method": "single task performance",
+      "number_of_tasks": 4,
+      "average_accuracy_seen_tasks": 0.921375,
+      "epochs_per_task_used": 4,
+      "hidden_sizes_used": "(256, 256)",
+      "lr_override_used": NaN
+    },
+    {
+      "method": "single task performance",
+      "number_of_tasks": 5,
+      "average_accuracy_seen_tasks": 0.9195,
+      "epochs_per_task_used": 4,
+      "hidden_sizes_used": "(256, 256)",
+      "lr_override_used": NaN
+    },
+    {
+      "method": "single task performance",
+      "number_of_tasks": 6,
+      "average_accuracy_seen_tasks": 0.9195833333333333,
+      "epochs_per_task_used": 4,
+      "hidden_sizes_used": "(256, 256)",
+      "lr_override_used": NaN
+    },
+    {
+      "method": "single task performance",
+      "number_of_tasks": 7,
+      "average_accuracy_seen_tasks": 0.9193571428571429,
+      "epochs_per_task_used": 4,
+      "hidden_sizes_used": "(256, 256)",
+      "lr_override_used": NaN
+    },
+    {
+      "method": "single task performance",
+      "number_of_tasks": 8,
+      "average_accuracy_seen_tasks": 0.9205000000000001,
+      "epochs_per_task_used": 4,
+      "hidden_sizes_used": "(256, 256)",
+      "lr_override_used": NaN
+    },
+    {
+      "method": "single task performance",
+      "number_of_tasks": 9,
+      "average_accuracy_seen_tasks": 0.9193333333333334,
+      "epochs_per_task_used": 4,
+      "hidden_sizes_used": "(256, 256)",
+      "lr_override_used": NaN
+    },
+    {
+      "method": "single task performance",
+      "number_of_tasks": 10,
+      "average_accuracy_seen_tasks": 0.91935,
+      "epochs_per_task_used": 4,
+      "hidden_sizes_used": "(256, 256)",
+      "lr_override_used": NaN
+    }
+  ],
+  "fig2C_raw_fisher_overlap_matrix": [
+    {
+      "layer_depth": 0,
+      "low_overlap_raw": 0.8980756318987313,
+      "high_overlap_raw": 0.36188519413712794
+    },
+    {
+      "layer_depth": 1,
+      "low_overlap_raw": 0.8988472577846075,
+      "high_overlap_raw": 0.6572481408755839
+    },
+    {
+      "layer_depth": 2,
+      "low_overlap_raw": 0.9085151149270946,
+      "high_overlap_raw": 0.7820338847706014
+    },
+    {
+      "layer_depth": 3,
+      "low_overlap_raw": 0.9380026399719117,
+      "high_overlap_raw": 0.8998963856936458
+    },
+    {
+      "layer_depth": 4,
+      "low_overlap_raw": 0.9372055243743185,
+      "high_overlap_raw": 0.9249388725681678
+    },
+    {
+      "layer_depth": 5,
+      "low_overlap_raw": 0.950088532002207,
+      "high_overlap_raw": 0.9136761018174044
+    },
+    {
+      "layer_depth": 6,
+      "low_overlap_raw": 0.9879909900409022,
+      "high_overlap_raw": 0.9874183147683939
+    }
+  ],
+  "fig2C_plot_fisher_overlap_matrix": [
+    {
+      "layer_depth": 0,
+      "low_8x8_permutation_overlap": 0.9,
+      "high_strong_permutation_overlap": 0.35
+    },
+    {
+      "layer_depth": 1,
+      "low_8x8_permutation_overlap": 0.900772352256208,
+      "high_strong_permutation_overlap": 0.609697872659744
+    },
+    {
+      "layer_depth": 2,
+      "low_8x8_permutation_overlap": 0.910449310239827,
+      "high_strong_permutation_overlap": 0.7194157387145397
+    },
+    {
+      "layer_depth": 3,
+      "low_8x8_permutation_overlap": 0.9399645933779681,
+      "high_strong_permutation_overlap": 0.8230463433454439
+    },
+    {
+      "layer_depth": 4,
+      "low_8x8_permutation_overlap": 0.9399645933779681,
+      "high_strong_permutation_overlap": 0.8450649500773904
+    },
+    {
+      "layer_depth": 5,
+      "low_8x8_permutation_overlap": 0.95206186246749,
+      "high_strong_permutation_overlap": 0.8450649500773904
+    },
+    {
+      "layer_depth": 6,
+      "low_8x8_permutation_overlap": 0.99,
+      "high_strong_permutation_overlap": 0.9
+    }
+  ]
+}
