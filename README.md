@@ -98,6 +98,7 @@ EE-AI-Catastrophic-Forgetting-EWC/
 │   ├── EWC_Reconstruction_Explanation.pdf
 │   ├── f תוכנית עבודה EWC-1.pdf
 │   ├── original_fig2A.png        # Cropped from Kirkpatrick paper
+│   ├── van_de_ven_architecture.md    # Code breakdown and scenario logic
 │   └── original_fig2C.png        # Cropped from Kirkpatrick paper
 │
 ├── takeaways.md                  # Project conclusions and math explanations (Hebrew)
